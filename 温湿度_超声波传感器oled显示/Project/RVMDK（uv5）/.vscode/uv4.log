@@ -1,0 +1,16 @@
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Program Files (x86)\keil5\ARM\ARMCC\Bin'
+Build target 'DHT11温湿度传感器'
+compiling main.c...
+..\..\User\main.c(275): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  		sprintf((unsigned char *)temp_num, "%.1f ", temp);
+..\..\User\main.c(276): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  		sprintf((unsigned char *)humi_num, "%d ", (u8)humi);
+..\..\User\main.c(283): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  		sprintf((unsigned char *)temp_num, "%d ", (u8)dt);
+..\..\User\main.c: 3 warnings, 0 errors
+compiling OLED_I2C.c...
+linking...
+Program Size: Code=11124 RO-data=3584 RW-data=1620 ZI-data=1052  
+FromELF: creating hex file...
+"..\..\Output\DHT11温湿度传感器.axf" - 0 Error(s), 3 Warning(s).
+Build Time Elapsed:  00:00:01
